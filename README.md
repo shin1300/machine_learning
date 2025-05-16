@@ -1,24 +1,72 @@
-# Machine Learning Projects
+# 機械学習モデルの理論実装とライブラリ実装の比較
 
-このリポジトリでは、Python で実装した機械学習モデルをまとめています。  
-主に基礎的なモデルの学習や、理論理解のために自作したコードを公開しています。
+本リポジトリは、代表的な機械学習手法について以下の 3 つのアプローチを比較・実装した学習用ポートフォリオです：
 
-## 現在の内容
-
-- 線形回帰モデルの実装（`S1_linear_regression.ipynb`）
-
-## 使用技術
-
-- Python
-- Jupyter Notebook
-- NumPy, Matplotlib など
-
-## 学んだこと
-
-- 線形回帰の基礎理論と実装方法
-- データの可視化技術
-- Python での数値計算
+- **理論に基づいた手動実装（from scratch）**
+- **ライブラリ（scikit-learn / PyTorch）による実装**
+- **数式・ロジックの可視化と比較分析**
 
 ---
 
-今後、他のモデルも追加予定です。
+## 🔧 対象アルゴリズム一覧(notebooks/)
+
+| 分野             | モデル                        | 実装方法                 | 説明資料                                                                                        |
+| ---------------- | ----------------------------- | ------------------------ | ----------------------------------------------------------------------------------------------- |
+| 回帰             | 線形回帰 / ロジスティック回帰 | 手動 / sklearn           | [Linear Regression](linear_regression.ipynb) / [Logistic Regression](logistic_regression.ipynb) |
+| 分類             | 決定木                        | 手動 / sklearn           | [Decision Tree](decision_tree.ipynb)                                                            |
+| クラスタリング   | k-means 法                    | 手動 / sklearn           | [K-means Clustering](k-means.ipynb)                                                             |
+| 異常検知         | 多変量ガウス分布              | 理論ベース               | [Anomaly Detection](anomaly_detection.ipynb)                                                    |
+| ニューラルネット | 単層 NN / 多層 NN             | 手動 / sklearn / PyTorch | [Neural Network](neural_network_regularization.ipynb)                                           |
+
+---
+
+## 📁 ディレクトリ構成
+
+machine_learning/
+│
+├── notebooks/ # 各モデルの実験・可視化用ノートブック
+│ ├── linear_regression.ipynb
+│ ├── logistic_regression.ipynb
+│ ├── decision_tree.ipynb
+│ ├── k-means.ipynb
+│ ├── anomaly_detection.ipynb
+│ └── neural_network_regularization.ipynb
+│
+├── datasets/ # 使用した CSV 等の小規模データセット
+│ └── diabetes.csv
+│
+├── README.md # ← このファイル
+└── requirements.txt # 必要なライブラリ
+
+---
+
+## 🧠 モデルごとの特徴・評価指標
+
+各ノートブックには以下の項目を記載しています：
+
+- モデルの理論背景と数式
+- 実装ロジックの詳細（手動 vs ライブラリ）
+- 可視化による直感的理解
+- 評価指標（MSE, Accuracy, F1, Silhouette など）
+- 実験結果と考察
+
+---
+
+## 💡 工夫ポイント
+
+- **手動実装**：理論に忠実なベクトル計算を行い、挙動の詳細を可視化
+- **ライブラリとの比較**：出力結果や精度を比較し、それぞれのメリットを明確化
+- **ニューラルネット**：PyTorch と scikit-learn を併用し、学習率・正則化の影響を実験
+- **異常検知**：多変量ガウス分布に基づくスコアリング + 最適な閾値探索（F1 スコア）
+
+---
+
+## 💻 実行方法
+
+```bash
+# 必要ライブラリのインストール
+pip install -r requirements.txt
+
+# Jupyter Lab / Notebook を起動
+jupyter lab
+```
