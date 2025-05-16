@@ -10,42 +10,14 @@
 
 ## 🔧 対象アルゴリズム一覧（`notebooks/`）
 
-<table>
-  <thead>
-    <tr>
-      <th style="width:15%; text-align:left;">分野</th>
-      <th style="width:40%; text-align:left;">モデル</th>
-      <th style="width:45%; text-align:left;">該当ファイル</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>回帰</td>
-      <td>線形回帰 / ロジスティック回帰</td>
-      <td><code>linear_regression.ipynb</code> / <code>logistic_regression.ipynb</code></td>
-    </tr>
-    <tr>
-      <td>分類</td>
-      <td>決定木</td>
-      <td><code>decision_tree.ipynb</code></td>
-    </tr>
-    <tr>
-      <td>クラスタリング</td>
-      <td>K-means</td>
-      <td><code>k-means.ipynb</code></td>
-    </tr>
-    <tr>
-      <td>異常検知</td>
-      <td>多変量ガウス分布</td>
-      <td><code>anomaly_detection.ipynb</code></td>
-    </tr>
-    <tr>
-      <td>ニューラルネット</td>
-      <td>単層 / 多層ニューラルネットワーク</td>
-      <td><code>neural_network_regularization.ipynb</code></td>
-    </tr>
-  </tbody>
-</table>
+|       分野       |              モデル               |                    該当ファイル                     |
+| :--------------: | :-------------------------------: | :-------------------------------------------------: |
+|       回帰       |   線形回帰 / ロジスティック回帰   | linear_regression.ipynb / logistic_regression.ipynb |
+|       分類       |              決定木               |                 decision_tree.ipynb                 |
+|  クラスタリング  |              K-means              |                    k-means.ipynb                    |
+|     異常検知     |         多変量ガウス分布          |               anomaly_detection.ipynb               |
+| ニューラルネット | 単層 / 多層ニューラルネットワーク |         neural_network_regularization.ipynb         |
+|                  |
 
 ---
 
@@ -55,6 +27,7 @@
 machine_learning/
 │
 ├── datasets/ # 使用した CSV 等の小規模データセット
+│
 ├── notebooks/ # 各モデルの実験・可視化用ノートブック
 │ ├── linear_regression.ipynb
 │ ├── logistic_regression.ipynb
@@ -66,6 +39,7 @@ machine_learning/
 ├── .gitignore
 │
 ├── README.md # ← 今このファイル
+│
 └── requirements.txt # 必要なライブラリ
 ```
 
