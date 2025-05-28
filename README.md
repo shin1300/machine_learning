@@ -16,7 +16,7 @@
 |       分類       |              決定木               |                 decision_tree.ipynb                 |
 |  クラスタリング  |              K-means              |                    k-means.ipynb                    |
 |     異常検知     |         多変量ガウス分布          |               anomaly_detection.ipynb               |
-| ニューラルネット | 単層 / 多層ニューラルネットワーク |         neural_network_regularization.ipynb         |
+| ニューラルネット | 単層 / 多層ニューラルネットワーク |      neural_network.ipynb/regularization.ipynb      |
 |                  |
 
 ---
@@ -47,7 +47,7 @@ machine_learning/
 
 ## 📊 使用データセット一覧
 
-| データセット名      | 備考                       |
+| データセット種類    | 備考                       |
 | ------------------- | -------------------------- |
 | Server Anomaly Data | 異常検知用サンプルデータ   |
 | Wine                | ワインの化学分析データ     |
